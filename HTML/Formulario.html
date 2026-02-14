@@ -1,0 +1,84 @@
+
+<!-- Indica que este tipo de archivo es html -->
+<!DOCTYPE html>
+<!-- Engloba todo el codigo HTML -->
+<html lang="en">
+  <!-- La cabezera de la pagina contiene informacion que no forma parte del contenido de la pagina pero contiene informacion util para los buscdores -->
+  <head>
+    <!-- Conjunto de caracteres manejados en la pagina web -->
+    <meta charset="UTF-8">
+    <!-- Indica que es una pagina web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Indica el titulo de la pagina, visualizable en google y la pestana -->
+    <title>Document</title>
+  </head>
+  <!-- El cuerpo de la pagina, contiene todo el contenido visible de la pagina -->
+  <body>
+    <!-- Formulario     -->
+    <form action="">
+      <!-- etiqueta de imput -->
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="escribe tu nombre">
+      <br>
+      <label for="fecha_de_nacimiento">fecha de nacimiento</label>
+      <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento">
+      <br>
+      <label for="genero">Genero</label>
+      <select name="google" id="genero">
+        <option value="masculino">Maculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      <br>
+      <label for="numero_telefono">Numero de telefono</label>
+      <input type="tel" id="numero_telefono" name="numero_telefono">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+      <br>
+      <label for="incapacidad">tiene alguna discapacidad?</label>
+      <input type="radio" name="incapacidad" id="incapacidad_si" value="Si">
+      <label for="incapacidad_si">Si</label>
+      <input type="radio" name="incapacidad" id="incapacidad_no" value="No">
+      <label for="incapacidad_no">No</label>
+      <br>
+      <label for="descripcion">breve descripcion de tu persona</label>
+      <textarea name="descrpcion" id="descripcion"></textarea>
+      <br>
+      <input type="submit" value="Enviar">
+      </select>
+    </form>
+  </body>
+</html>
+
+
+<!--
+  Proyecto de HTML
+  Realiza una pagina que funcione como tu CV, el cual debe de contener:
+  - Tu nombre completo
+  - Tu fecha de nacimiento
+  - Tu genero
+  - Tu numero de telefono
+  - Tu email
+
+  - Experiencia laboral
+  - Habilidades
+  - Estudios realizados
+
+  Debes utilizar etiquetas semanticas, como por ejemplo:
+  - header
+  - section
+  
+  etc.
+
+  Debes de agregar un formulario de contacto al final, debe de tener
+  - Un campo para el nombre
+  - Un campo para el email
+  - Un campo para el numero de telefono
+  - Un campo para el mensaje
+
+  Puedes agregar botones, imagenes, videos, etc. para hacer tu CV mas atractivo visualmente
+
+  Fecha de entrega: 16/02/26
