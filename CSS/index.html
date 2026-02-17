@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <style>
       #resaltado {
@@ -38,5 +39,20 @@
     <p class="destacado">Somos <span>extremadamente</span> clasistas</p>
     <p class="destacado">Somos <span>extremadamente</span> clasistas</p>
     <a href="#" class="destacado">Soy un link <span>extremadamente</span> clasista</a>
+    <button class="boton-destacado">
+      Soy un boton destacado
+    </button>
+    <!--
+      ¿Qué es mas prioritario?
+      1) #nav .destacado .importante p #menu (2, 2, 1)
+      o
+      2) #menu .importante .destacado #nav (2, 2, 0)
+
+      ¿Qué es mas prioritario?
+      #nav (1, 0, 0)
+      O
+      .importante .destacado .increible .parrafos (0, 4, 0)
+    -->
+    
   </body>
 </html>
