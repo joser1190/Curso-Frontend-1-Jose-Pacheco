@@ -7,26 +7,31 @@ nav{
   padding: 15px;
 }
 
+img {
+  width:40px;
+  height: 40px;
+  border: solid black 2px;
+}
+
 nav #desktop {
-  display: none;
-  
+  display: none;  
 }
 
 nav #mobile{
   display: flex;
   justify-content: space-between;
-  
-  
-}
+  margin-top: 10px;
+  }
 
 @media only screen and (min-width: 600px) {
+    nav {
+      width: 100%;
+      margin-top: 2px;
+    }
     nav #desktop {
       display: flex;
-      width: 100%;
-      gap: 20px;
-      padding: 12px 20px;
-      border: solid black 1px;
-      border-radius: 2px;
+      gap: 10px;
+      padding: 12px;
     }
     nav #mobile {
       display: none;
