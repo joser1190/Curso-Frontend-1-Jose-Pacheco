@@ -1,0 +1,93 @@
+header{
+  display: flex;
+  /* flex-direction: me permite cambiar la direcciond de los elementos hijos;
+  row: los elementos se alinean horizontalmente (por defecto)
+  column, los elementos se alinean verticalmente */
+  flex-direction: column;
+  /* align items me permite alinear los elementos hijos a lo largo del eje secundario (vertical por defecto)
+  stretch: Es el valor por defecto. Los elementos se estiran para llenar todo el alto del contenedor (si no tienen un alto fijo definido).
+
+  flex-start: Alinea los elementos al inicio del contenedor (arriba, si es una fila).
+
+  flex-end: Alinea los elementos al final del contenedor (abajo, si es una fila).
+
+  center: Los elementos se centran verticalmente respecto al contenedor. Es el santo grial para centrar cosas en CSS.
+
+  baseline: Alinea los elementos según la línea base de su texto. Muy útil si tienes cajas con distintos tamaños de fuente y quieres que las letras "apoyen" en la misma línea invisible. */
+  align-items: center;
+  padding: 30px 20px;
+  background-image: url(https://www.apple.com/v/home/cl/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_large.jpg);
+
+  /* background-size: me permite controlar el tamano de la imagend e fondo
+  posibles valores:
+  cover:la imagen se escala para cubrir todo el contenedor, manteniendo su proporcion, puede recortar partes
+  contain: la imagen se escala para ajustarse dentro del contendor, manteniendo su proporcion, puede dejar espacion
+  auto:la imagen mantiene su tamno original
+  100% 100%: la imagen se estira para llenar el 100%  sin mantener su proporcion
+  un valor especifico ( por ejemplo, 200pc 300 px): la imagen se escala a las dimensiones especificas */
+  background-size: cover;
+
+  /* Es la forma más intuitiva. Puedes combinar una posición horizontal con una vertical.
+
+  Horizontales: left, center, right.
+
+  Verticales: top, center, bottom.
+
+  Ejemplo:
+  background-position: right center; (La imagen se pega a la derecha y se centra verticalmente). */
+  background-position: center;
+  /* repeat: Es el valor por defecto. La imagen se repite tanto horizontal como verticalmente hasta llenar el contenedor. Si la imagen no encaja exacta, se corta al final.
+
+  no-repeat: La imagen se muestra una sola vez. Ideal para banners o logotipos centrados.
+
+  repeat-x: La imagen solo se repite de forma horizontal.
+
+  repeat-y: La imagen solo se repite de forma vertical. */
+  background-repeat: no-repeat;
+  min-height: 500px;      
+}
+
+header > h2 {
+  font-size: 48px;
+  }
+
+header > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}  
+
+header > div {
+  margin-top: 20px;
+  display: flex;
+  gap:20px;
+}
+
+.boton_destacado {
+  background-color: #0071e3;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.boton {
+  background-color: transparent;
+  color: #0071e3;
+  padding: 6px 20px;
+  border-radius: 25px;
+  border: 1px solid #0071e3;
+}
+
+/* header > div> button:first-child {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 20px;
+} */
+
+/* @media only screen and (min-width: 992px) {
+  h3 {
+    justify-content: center;
+  }
+} */
