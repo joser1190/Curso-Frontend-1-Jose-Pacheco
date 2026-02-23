@@ -44,11 +44,12 @@ header{
 
   repeat-y: La imagen solo se repite de forma vertical. */
   background-repeat: no-repeat;
-  min-height: 500px;      
+  min-height: 600px;      
 }
 
 header > h2 {
   font-size: 48px;
+  font-weight: 600;
   }
 
 header > h3 {
