@@ -47,18 +47,24 @@ header{
   min-height: 600px;      
 }
 
-header > h2 {
+header > h2 , .iPad >h2, .airpods >h2{
   font-size: 48px;
   font-weight: 600;
-  }
+}
 
-header > h3 {
+.iPad> h2 > span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    color: #0071e3;
+}
+
+header > h3 , .airpods > h3, .iPad > h3{
   font-size: 24px;
   font-weight: 400;
   text-align: center;
 }  
 
-header > div {
+header > div , .iPad > div , .airpods > div{
   margin-top: 20px;
   display: flex;
   gap:20px;
@@ -92,3 +98,23 @@ header > div {
     justify-content: center;
   }
 } */
+
+.iPad, .airpods{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  margin: 20px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;      
+}
+
+.iPad {
+  background-image: url(https://www.apple.com/v/home/cl/images/heroes/ipad-air/hero_ipad_air_avail__c34ycq52exg2_large.jpg);
+}
+
+.airpods {
+  background-image: url(https://www.apple.com/v/home/cl/images/heroes/airpods-pro-3/hero_airpodspro_3__dn7gz4l22ree_large.jpg);
+}
