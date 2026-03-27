@@ -155,3 +155,61 @@ a;
 3 < 2; //false
 2 >= 2; //true
 0 <= 3; //true
+
+/*
+  OPERADORES LOGICOS
+  && AND (Y)
+  || OR (O)
+  ! NOT (NO)
+*/
+
+// (Facil)
+var uno = !true || false; //false
+var dos = false && !false; //false
+var tres = true && !false; //true
+
+//(Medio)
+var cuatro = 5 === 5 || !true; //true
+var cinco = !0 || 5 < 0; //true
+var seis = 3 > 4 && !0; //false
+
+//Avanzado
+var siete = ((false || true) && !false && true) || (true && false); //true
+var ocho = 6 === 3 + 3 && 9 / 3 >= 3; //true
+var nueve = !!false || ("1" == 1 && !false === true); //true
+
+//Hardcore
+var diez = !!true === !!(5 >= 5); //true
+var once = !(true && !true === !!(8 === 4 * 2)); //true
+
+//Ultra-Hardcore
+var doce = !(true && !true === !!(16 === 4 * 2 + 8)) !== false; //true
+
+//Leyenda
+var trece = !(
+  (!(!(10 / 5 == "2") === false) != false) === 5 * 5 <= 100 / 4 &&
+  !(1 + 1 !== 10 / 5) !== true
+);
+
+//Inmortal
+var catorce = !!(
+  (10 % 3 != 1 || typeof ("10" - 5) !== "number" || !!([] && {})) &&
+  (12 * 4 === "48" || (7 <= "7" && "7" <= 7) || Boolean(0) === Boolean("0"))
+);
+
+console.log(
+  uno,
+  dos,
+  tres,
+  cuatro,
+  cinco,
+  seis,
+  siete,
+  ocho,
+  nueve,
+  diez,
+  once,
+  doce,
+  trece,
+  catorce
+);
