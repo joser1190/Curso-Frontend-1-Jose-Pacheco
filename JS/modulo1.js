@@ -213,3 +213,44 @@ console.log(
   trece,
   catorce
 );
+
+let edad = 64;
+
+if (typeof edad !== "number") {
+  console.log("La edad debe ser un numero");
+} else if (edad < 0) {
+  console.log("La edad no puede ser negativa");
+} else if (edad < 18) {
+  console.log("Eres menor de edad");
+} else if (edad >= 18 && edad < 65) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres adulto mayor");
+}
+
+let tiempo = true;
+let dinero = true;
+let ganas = false;
+let campeones_del_mundo = true;
+
+if ((tiempo && dinero && ganas) || campeones_del_mundo) {
+  console.log("Hoy salgo");
+} else {
+  console.log("Hoy no salgo");
+}
+
+let color = "rojo";
+
+switch (color) {
+  case "verde":
+    console.log("Avanza");
+    break;
+  case "amarillo":
+    console.log("Precaucion");
+    break;
+  case "rojo":
+    console.log("Alto");
+    break;
+  default:
+    console.log("Color no valido");
+}
