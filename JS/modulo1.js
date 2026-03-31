@@ -254,3 +254,58 @@ switch (color) {
   default:
     console.log("Color no valido");
 }
+
+// Ejercicio de practiva 19/03/2026
+// Crea 3 variables
+// Num1
+// Num2
+// Operador
+
+// Crea un condicional que evalúe el operador y según este multiplique, divida, reste, sume los dos números e imprima en consola el resultado
+
+let num1 = 10
+let num2 = 5
+let operador = '-'
+
+if (typeof num1 !=="number" || typeof num2 !=="number") {
+  console.log ('los valores deden ser numeros');
+} else {
+  switch (operador) {
+    case '+':
+      console.log(num1 + num2);
+      break;
+    case '-':
+      console.log (num1 - num2);
+      break;
+    case '*':
+      console.log (num1 * num2);
+      break;
+    case '/':
+      console.log ( num1 / num2);
+      break;
+    default:
+      console.log ('operacion invalida')
+  }
+}
+
+let num11 = Number(prompt("Ingrese el primer numero"));
+let num22 = Number(prompt("Ingrese el segundo numero"));
+let operacion = prompt(
+  "Ingrese la operacion a realizar (suma, resta, multiplicacion, division)",
+);
+
+if (operacion === "suma") {
+  alert("El resultado de la suma es: " + (num11 + num22));
+} else if (operacion === "resta") {
+  alert("El resultado de la resta es: " + (num11 - num22));
+} else if (operacion === "multiplicacion") {
+  alert("El resultado de la multiplicacion es: " + (num11 * num22));
+} else if (operacion === "division") {
+  if (num22 === 0) {
+    alert("No se puede dividir entre cero");
+  } else {
+    alert("El resultado de la division es: " + (num11 / num22));
+  }
+} else {
+  alert("Operacion no valida");
+}
