@@ -241,3 +241,92 @@ scope(fantastico, "oscar");
 */
 
 
+function contar(contador = 0) {
+  if (contador <= 10) {
+    console.log(
+      `Esta funcion cuenta hasta el 10, voy por el numero ${contador}`,
+    );
+    contar(contador + 1);
+  }
+}
+
+contar();
+
+let frutas = ["tomate", "banana", "fresa", "kiwi"];
+
+function recorrerArray(array, contador = 0) {
+  if (contador < array.length) {
+    console.log(array[contador]);
+    recorrerArray(array, contador + 1);
+  }
+}
+
+recorrerArray(frutas);
+
+let numeros2 = [2.44, 5, 2, 0, 5, 6];
+
+let compras = [
+  ["jamon", "queso"],
+  ["carne", "pollo"],
+  ["tomate", "cebolla"],
+];
+
+/*
+  Crea un programa que imprima solo los numeros pares del siguiente array
+  [0,3,5,1,2,8,9,10]
+*/
+
+function detectarPar(array, contador = 0) {
+  if (contador < array.length) {
+    if (array[contador] % 2 == 0) {
+      console.log(`${array[contador]} es un numero par`);
+    }
+    detectarPar(array, contador + 1);
+  }
+}
+
+detectarPar([0, 3, 5, 1, 2, 8, 9, 10]);
+
+
+/*
+  EJERCICIOS DE RECURSION 
+
+  1) Cuenta desde el ultimo numero de un array hasta el primero
+  [5,2,92,0,3,73,9,6,12]
+*/
+let numeros = [5,2,92,0,3,73,9,6,12];
+
+function recorrerArray(array, contador = array.length - 1) {
+  if (contador >= 0) {
+    console.log(array[contador]);
+    recorrerArray(array, contador - 1);
+  }
+}
+
+recorrerArray(numeros);
+
+
+/*2) Suma todos los numeros de un array e imprime cuanto es el total
+  [5,2,92,0,3,73,9,6,12]*/
+
+let numeros3 = [5,2,92,0,3,73,9,6,12];
+
+function sumar(array, contador = 0, sumatoria = 0) {
+  if (contador < array.length)  {
+    // Sumamos el número actual al total que ya llevamos
+    sumatoria = sumatoria + array[contador];
+    
+    // Llamamos de nuevo pasando el nuevo total
+    return sumar(array, contador + 1, sumatoria);
+  }
+  // Cuando terminamos, devolvemos el total final
+  return sumatoria;
+}
+
+console.log(sumar(numeros3)); // Resultado 
+    
+sumar(numeros3);
+
+
+/*3)Realiza la sucesion de fibonacci hasta un numero N que funcione de limite
+*/
