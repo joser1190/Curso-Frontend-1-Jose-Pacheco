@@ -330,3 +330,114 @@ sumar(numeros3);
 
 /*3)Realiza la sucesion de fibonacci hasta un numero N que funcione de limite
 */
+
+function fibonacci(limite, antiguo = 0, nuevo = 1) {  
+  if (limite >= 0) {
+    resultado = antiguo + nuevo;
+    console.log(resultado);
+    fibonacci(limite - 1, nuevo, resultado);
+  }
+}
+
+fibonacci(10);
+
+
+//BUCLE FOR
+for (let i = 0; i < 10; i++) {
+  console.log(`El numero actual es: ${i}`);
+}
+
+let frutas2 = ["manzana", "banana", "fresa", "kiwi"];
+for (let i = 0; i < frutas2.length; i++) {
+  console.log(`La fruta en la posicion ${i} es: ${frutas2[i]}`);
+}
+
+//BUCLE WHILE
+let contador = 0;
+while (contador < 10) {
+  console.log(`El numero actual es: ${contador}`);
+  contador++;
+}
+
+//BUCLE DO WHILE
+let contador2 = 0;
+do {
+  console.log(`El numero actual es: ${contador2}`);
+  contador2++;
+} while (contador2 < 10);
+
+//CICLO FOR OF
+let frutas3 = ["manzana", "banana", "fresa", "kiwi"];
+for (let fruta of frutas3) {
+  console.log(`La fruta es: ${fruta}`);
+}
+
+//CICLO FOR IN
+let persona = {
+  nombre: "Juan",
+  edad: 30,
+  ciudad: "Madrid",
+};
+
+for (let propiedad in persona) {
+  console.log(
+    `La propiedad es: ${propiedad} y su valor es: ${persona[propiedad]}`,
+  );
+}
+
+let compras2 = [["jamon", "queso"], ["carne", "pollo"], 2];
+
+for (elemento of compras2) {
+  if (Array.isArray(elemento)) {
+    for (elemento2 of elemento) {
+      console.log(elemento2);
+    }
+  } else {
+    console.log(elemento);
+  }
+}
+
+
+  // EJERCICIO DE FOR OF 1
+  // Crea un programa que pueda recorrer el siguiente array
+  // [
+  //   ["manzana", "banana", "fresa"],
+  //   ["tomate", "cebolla", "lechuga"],
+  //   ["carne", "pollo", ["pescado", "mariscos"]],
+  // ]
+  // e imprima cada elemento del array, sin importar el nivel de anidacion.
+
+
+  let frutas4 = [
+    ["manzana", "banana", "fresa"],
+    ["tomate", "cebolla", "lechuga"],
+    ["carne", "pollo", ["pescado", "mariscos"]]
+  ];
+
+  for (let fruta of frutas4) {
+  for (let fruta2 of fruta) {
+    
+    if (Array.isArray(fruta2)) {
+      for (let fruta3 of fruta2) {
+        console.log(fruta3);
+      }
+    } else {
+      console.log(fruta2);
+    }
+  }
+}
+  
+
+  // EJERCICIO DE FOR IN
+  // Crea un programa que pueda recorrer el siguiente objeto
+  // {
+  //   nombre: "Juan",
+  //   edad: 30,
+  //   direccion: {
+  //     calle: "Calle Falsa 123",
+  //     ciudad: "Madrid",
+  //     pais: "España",
+  //   },
+  //   hobbies: ["futbol", "musica", "cine"],
+  // }
+  // e imprima cada propiedad y su valor, sin importar el nivel de anidacion.
