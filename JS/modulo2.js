@@ -408,24 +408,25 @@ for (elemento of compras2) {
   // e imprima cada elemento del array, sin importar el nivel de anidacion.
 
 
-  let frutas4 = [
+  let frutasV2 = [
     ["manzana", "banana", "fresa"],
     ["tomate", "cebolla", "lechuga"],
     ["carne", "pollo", ["pescado", "mariscos"]]
   ];
 
-  for (let fruta of frutas4) {
-  for (let fruta2 of fruta) {
+
+  
+  for (let items of frutasV2) {
+    const flattenArray = items.flat()
+    ;
     
-    if (Array.isArray(fruta2)) {
-      for (let fruta3 of fruta2) {
-        console.log(fruta3);
-      }
-    } else {
-      console.log(fruta2);
+
+    for ( let i of flattenArray) {
+      console.log(i);
     }
-  }
-}
+      
+  } 
+  
   
 
   // EJERCICIO DE FOR IN
